@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mycafeneo</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <div id="counterleft">
+                <div class="image">
+                </div>
+            </div>
+
+
+
+            <div id="countUp">
+                <div class="number" data-from="0" data-to="404">.</div>
+                <div class="firsttext">Currently Brewing !!</div>
+                <div class="text">Have some Coffee & Chill. We'll be back up soon,please bear with us.</div>
+                <!-- <div class="text">We'll be back up soon,please bear with us.</div> -->
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+    <!-- <script src="https://cdn.bootcss.com/jquery.inview/1.0.0/jquery.inview.js"></script> -->
+
+
+    <script>
+        function countUp() {
+            var countEl = document.querySelector('.number');
+            // var countBar = document.querySelector('.progress-bar');
+            // var countText = document.querySelector('.count-text');
+            // countText.innerHTML = 'counting...'
+            var x = 0;
+            var y = countEl.dataset.to;
+            // var z = countBar.dataset.to;
+
+            function addNum() {
+                countEl.innerHTML = x;
+                // countBar.style.height = x + 'vh';
+                x += 1;
+                if (x > y) {
+                    clearInterval(timer);
+                    // countText.innerHTML = 'done!';
+                    // toggleBtn.classList.remove('hidden');
+                }
+            }
+
+            var timer = window.setInterval(addNum, 10);
+            // var toggleBtn = document.querySelector('.repeat-btn');
+            // toggleBtn.addEventListener('click', function() {
+            //     countUp();
+            //     // toggleBtn.classList.add('hidden');
+            // });
+        }
+        countUp();
+    </script>
+
+</body>
+
+</html>

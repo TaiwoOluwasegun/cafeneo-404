@@ -1,0 +1,129 @@
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,500"); 
+*/
+
+@font-face {
+    font-family: Lubalin;
+    src: url('./LubalinGraphStd-Book.otf');
+}
+
+@font-face {
+    font-family: LubalinBold;
+    src: url('./Lubalin\ Graph\ Bold\ Italic.ttf');
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: #e9e8e6;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    max-height: 100vh;
+    max-width: 100vw;
+    font-family: "Lubalin", 'Times New Roman', Times, serif, monospace;
+    color: rgba(216, 144, 11, 0.87);
+    overflow: hidden;
+}
+
+div.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding-top: 10%; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+}
+
+#counterleft {
+    display: block;
+    height: 250px;
+    width: 250px;
+    padding-top: 80px;
+}
+
+div .image {
+    background-image: url("./background.png");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    /* padding-top: 60px; */
+    height: 80%;
+    width: 80%;
+}
+
+#countUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-top: -90px;
+    margin-left: -20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#countUp .number {
+    font-size: 8.5rem;
+    font-family: LubalinBold;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-shadow: 1px 2px 3px rgba(61, 56, 56, 0.767);
+}
+
+#countUp .number+.firsttext {
+    margin: 0 0 1rem;
+    color: rgba(216, 144, 11, 0.87);
+}
+
+#countUp .firsttext {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    /* color: #4d271c; */
+}
+
+#countUp .text {
+    font-weight: 300;
+    text-align: center;
+    color: #313131;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 600px) {
+    #countUp {
+        margin-top: -50px;
+        /* margin-left: -5px; */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #countUp .number {
+        font-size: 6.5rem;
+        font-family: LubalinBold;
+        font-weight: 300;
+        letter-spacing: 10px;
+        text-shadow: 1px 2px 3px rgba(61, 56, 56, 0.767);
+    }
+    #countUp .number+.firsttext {
+        margin: 0 0 1rem;
+        color: rgba(216, 144, 11, 0.87);
+    }
+    #countUp .firsttext {
+        font-weight: 700;
+        /* font-size: 15px; */
+        text-align: center;
+        /* color: #4d271c; */
+    }
+    #countUp .text {
+        font-weight: 300;
+        text-align: center;
+        color: #313131;
+        line-height: 1.4;
+        font-size: 12px;
+    }
+}
